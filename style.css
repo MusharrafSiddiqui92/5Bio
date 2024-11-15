@@ -1,0 +1,72 @@
+
+body{
+    background-image: url("chk.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0px;
+}
+
+.container .nav{
+    display: flex;
+    justify-content: center;
+    
+}
+.nav ul{
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border: 1px solid white;
+    width: 550px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    display: flex;
+    gap: 40px;
+    font-size: x-large;
+}
+.nav ul li{
+    list-style-type: none;
+}
+.nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+.nav ul li a:hover {
+    color: blue;
+}
+.container .left{
+    width: 40vw;
+    height: 30vh;
+    /* border: 2px solid black; */
+    text-transform: capitalize;
+    padding-left: 25px;
+}
+.left h1{
+    color: white;
+    font-size: 50px;
+}
+.left p{
+    color: white;
+font-size: larger;
+}
+.seccon{
+    display: flex;
+    justify-content:center;
+    height: 70vh;
+    align-items: center;
+}
+.seccon .right img{
+    width: 400px;
+    height: 550px;
+}
+.copyright footer{
+width: 90vw;
+height: 40px;
+color: rgba(250, 1, 1, 0.884);
+text-align: center;
+font-size: 25px;
+font-weight: bolder;
+padding-top: 10px;
+}

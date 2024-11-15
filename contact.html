@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContactMe</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            background-image:url("conchk.jpeg");
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .container {
+            display: flex;
+            height: 90vh;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .left { 
+            border: 2px solid rgb(255, 255, 255);
+            width: 40vw;
+            height: 80vh;
+            color: white;
+        }
+
+        .address {
+            font-size: 15px;
+            display: flex;
+            margin: 10px;
+            font-size: 25px;
+        }
+
+        .address i {
+            font-size: 35px;
+            padding-top: 15px;
+            margin: 10px;
+            color: blue;
+        }
+
+        .mobile {
+            font-size: 15px;
+            display: flex;
+            margin: 10px;
+            font-size: 25px;
+        }
+
+        .mobile i {
+            font-size: 35px;
+            padding-top: 15px;
+            margin: 10px;
+            color: black;
+        }
+
+        .whatsapp {
+            font-size: 15px;
+            display: flex;
+            margin: 10px;
+            font-size: 25px;
+        }
+
+        .whatsapp i {
+            font-size: 35px;
+            padding-top: 15px;
+            margin: 10px;
+            color: rgb(141, 255, 75);
+        }
+
+        .email {
+            font-size: 15px;
+            display: flex;
+            margin: 10px;
+            font-size: 25px;
+        }
+
+        .email i {
+            font-size: 35px;
+            padding-top: 15px;
+            margin: 10px;
+            color: rgb(255, 98, 98);
+        }
+
+        .left h2 {
+            padding-left: 15px;
+        }
+
+        .social {
+            display: flex;
+            padding-top: 5px;
+            gap: 20px;
+        }
+
+        .linkedin a i {
+            font-size: 45px;
+            padding-top: 15px;
+            margin: 10px;
+            color: blue;
+        }
+
+        .youtube a i {
+            font-size: 45px;
+            padding-top: 15px;
+            margin: 10px;
+            color: red;
+        }
+
+        .facebook a i {
+            font-size: 45px;
+            padding-top: 15px;
+            margin: 10px;
+            color: rgb(0, 15, 224);
+        }
+
+        .right {
+            border: 2px solid rgb(255, 255, 255);
+            width: 40vw;
+            height: 80vh;
+        }
+
+        .right input {
+            width: 500px;
+            height: 40px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        .right textarea {
+            width: 500px;
+            height: 250px;
+            margin: 10px;
+        }
+
+        .right button {
+            width: 120px;
+            height: 50px;
+            border-radius: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="address"><i class="fa-solid fa-location-dot"></i>
+                <p>Syllani headquarter,Hyderabad.</p>
+            </div>
+            <div class="mobile"><i class="fa-sharp fa-solid fa-mobile"></i>
+                <p>0334-8108095</p>
+            </div>
+            <div class="whatsapp"><i class="fa-brands fa-whatsapp"></i>
+                <p>0346-3825908</p>
+            </div>
+            <div class="email"><i class="fa-sharp fa-regular fa-envelope"></i>
+                <p>musharrafzafar@gmail.com</p>
+            </div>
+            <h2>Click For Social</h2>
+            <div class="social">
+                <div class="linkedin"><a href="https://www.linkedin.com/feed/" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i></a></div>
+                <div class="youtube"><a href="https://www.youtube.com/channel/UCcZZTluW9yNOdlUsyY1PLAQ"
+                        target="_blank"><i class="fa-brands fa-youtube"></i></a></div>
+                        <div class="facebook"><a href="https://www.facebook.com/Musharraf.siuddiqui" target="_blank"><i class="fa-brands fa-facebook"></i></a></div>
+            </div>
+        </div>
+        <div class="right">
+            <input type="" placeholder="Enter Your Name"> <br>
+            <input type="email" placeholder="Wite your E-Mail"> <br>
+            <textarea name="textarea" id="textarea" placeholder="write /your Message"></textarea> <br>
+            <button>Send Message</button>
+        </div>
+    </div>
+</body>
+
+</html>
