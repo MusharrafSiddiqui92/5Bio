@@ -1,72 +1,80 @@
-
-body{
-    background-image: url("chk.jpg");
-    background-repeat: no-repeat;
-    background-size:cover;
-    background-position: center;
-    height: 100vh;
-    margin: 0px;
+/* General Reset and Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
 }
 
-.container .nav{
-    display: flex;
-    justify-content: center;
-    
+/* Navigation Bar Customizations */
+.navbar {
+    background-color: #f8f9fa; /* Light background */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
-.nav ul{
-    background: transparent;
-    backdrop-filter: blur(10px);
-    border: 1px solid white;
-    width: 550px;
-    height: 50px;
-    justify-content: center;
-    align-items: center;
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #007bff; /* Primary color */
+}
+
+.nav-link {
+    color: #333;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    color: #007bff; /* Primary color on hover */
+}
+
+/* Introduction Section */
+h1 {
+    color: #333;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.left {
+    padding: 20px;
+}
+
+.right img {
     border-radius: 10px;
-    display: flex;
-    gap: 40px;
-    font-size: x-large;
+    max-width: 100%;
 }
-.nav ul li{
-    list-style-type: none;
+
+/* Footer Section */
+footer {
+    background-color: #f8f9fa;
+    color: #555;
+    font-size: 0.9rem;
+    border-top: 1px solid #ddd;
 }
-.nav ul li a{
-    color: white;
-    text-decoration: none;
+
+footer p {
+    margin: 0;
+    padding: 10px 0;
 }
-.nav ul li a:hover {
-    color: blue;
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1rem;
+    }
 }
-.container .left{
-    width: 40vw;
-    height: 30vh;
-    /* border: 2px solid black; */
-    text-transform: capitalize;
-    padding-left: 25px;
-}
-.left h1{
-    color: white;
-    font-size: 50px;
-}
-.left p{
-    color: white;
-font-size: larger;
-}
-.seccon{
-    display: flex;
-    justify-content:center;
-    height: 70vh;
-    align-items: center;
-}
-.seccon .right img{
-    width: 400px;
-    height: 550px;
-}
-.copyright footer{
-width: 90vw;
-height: 40px;
-color: rgba(250, 1, 1, 0.884);
-text-align: center;
-font-size: 25px;
-font-weight: bolder;
-padding-top: 10px;
+@media (max-width: 768px) {
+    .left h1 {
+        font-size: 2rem;
+    }
+    .nav ul {
+        gap: 20px;
+    }
 }

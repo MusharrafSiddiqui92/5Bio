@@ -4,62 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-       body{
-        background-image:url("proback.jpg");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        margin: 0px;
+       body {
+           background-image: url("proback.jpg");
+           background-size: cover;
+           background-position: center;
+           background-repeat: no-repeat;
+           margin: 0;
+           color: white;
        }
-       .up{
-            display: flex;
-            gap: 5px;
-            justify-content: center;
-            margin-bottom: 20px;
-            margin-top: 20px;
-            color: white;
-        }
-        .up .box{
-            border: 2px solid black;
-            width: 43vw;
-            height: 43vh;
-            border-radius: 5px;
-            text-align: center;
-        }
-
-        .down{
-            color: white;
-            display: flex;
-            gap: 5px;
-            justify-content: center;
-        }
-        .down .box{
-            border: 2px solid black;
-            width: 43vw;
-            height: 43vh;
-            border-radius: 5px;
-            text-align: center;
-        }
-        .box a{
-            color: aqua;
-        }
-        .box a:hover{
-            color: azure;
-        }
+       .box {
+           border: 2px solid black;
+           border-radius: 5px;
+           text-align: center;
+           padding: 20px;
+           background: rgba(0, 0, 0, 0.5);
+       }
+       .box a {
+           color: aqua;
+       }
+       .box a:hover {
+           color: azure;
+       }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="up">
-        <div class="box">Project1 <br><h1>CV</h1></div>
-        <div class="box">Project2 <br><h1>Recepie</h1><a href=" https://musharrafsiddiqui92.github.io/Assignment2/" target="_blank"> https://musharrafsiddiqui92.github.io/Assignment2/</a></div>
+    <div class="container py-5">
+        <!-- Row for the first two projects -->
+        <div class="row mb-4">
+            <div class="col-md-6 mb-3">
+                <div class="box">
+                    <h1>Project 1</h1>
+                    <p>CV</p>
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <div class="box">
+                    <h1>Project 2</h1>
+                    <p>Recipe</p>
+                    <a href="https://musharrafsiddiqui92.github.io/Assignment2/" target="_blank">
+                        Visit Project
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Row for the last two projects -->
+        <div class="row">
+            <div class="col-md-6 mb-3">
+                <div class="box">
+                    <h1>Project 3</h1>
+                    <p>Periodic Table</p>
+                    <a href="https://musharrafsiddiqui92.github.io/Assignment3/" target="_blank">
+                        Visit Project
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6 mb-3">
+                <div class="box">
+                    <h1>Project 4</h1>
+                    <p>Form</p>
+                    <a href="https://musharrafsiddiqui92.github.io/Ass4Form/" target="_blank">
+                        Visit Project
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="down">
-        <div class="box">Project3 <br><h1>Periodic Table</h1>
-        <div class="periodic"><a href="https://musharrafsiddiqui92.github.io/Assignment3/" target="_blank">https://musharrafsiddiqui92.github.io/Assignment3/</a></div> </div>
-        <div class="box">Project4 <br><h1>Form</h1><a href="https://musharrafsiddiqui92.github.io/Ass4Form/" target="_blank">https://musharrafsiddiqui92.github.io/Ass4Form/</a></div>
-    </div>
-</div>
+
+    <!-- Bootstrap JS (Optional, for interactive components) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

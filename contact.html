@@ -4,176 +4,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ContactMe</title>
+    <title>Contact Me</title>
+
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Styles -->
     <style>
         body {
-            background-image:url("conchk.jpeg");
+            background-image: url("conchk.jpeg");
             background-position: center;
             background-size: cover;
             background-repeat: no-repeat;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
         }
 
         .container {
             display: flex;
-            height: 90vh;
+            flex-wrap: wrap; /* Allow wrapping for smaller screens */
+            height: auto;
             justify-content: center;
             align-items: center;
-            gap: 10px;
+            gap: 20px;
+            padding: 20px;
         }
 
-        .left { 
-            border: 2px solid rgb(255, 255, 255);
-            width: 40vw;
-            height: 80vh;
+        .left, .right {
+            border: 2px solid rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5);
             color: white;
+            width: 100%;
+            max-width: 500px; /* Restrict max width */
+            height: auto;
         }
 
-        .address {
-            font-size: 15px;
+        .left .address, 
+        .left .mobile, 
+        .left .whatsapp, 
+        .left .email {
             display: flex;
-            margin: 10px;
-            font-size: 25px;
+            align-items: center;
+            font-size: 1.2rem;
+            margin: 15px 0;
         }
 
-        .address i {
-            font-size: 35px;
-            padding-top: 15px;
-            margin: 10px;
-            color: blue;
-        }
-
-        .mobile {
-            font-size: 15px;
-            display: flex;
-            margin: 10px;
-            font-size: 25px;
-        }
-
-        .mobile i {
-            font-size: 35px;
-            padding-top: 15px;
-            margin: 10px;
-            color: black;
-        }
-
-        .whatsapp {
-            font-size: 15px;
-            display: flex;
-            margin: 10px;
-            font-size: 25px;
-        }
-
-        .whatsapp i {
-            font-size: 35px;
-            padding-top: 15px;
-            margin: 10px;
-            color: rgb(141, 255, 75);
-        }
-
-        .email {
-            font-size: 15px;
-            display: flex;
-            margin: 10px;
-            font-size: 25px;
-        }
-
-        .email i {
-            font-size: 35px;
-            padding-top: 15px;
-            margin: 10px;
-            color: rgb(255, 98, 98);
+        .left i {
+            font-size: 2rem;
+            margin-right: 15px;
         }
 
         .left h2 {
-            padding-left: 15px;
+            margin-top: 20px;
+            font-size: 1.5rem;
+            color: gold;
         }
 
         .social {
             display: flex;
-            padding-top: 5px;
-            gap: 20px;
+            justify-content: space-around;
+            margin-top: 15px;
         }
 
-        .linkedin a i {
-            font-size: 45px;
-            padding-top: 15px;
-            margin: 10px;
-            color: blue;
+        .social a {
+            color: white;
+            font-size: 2rem;
+            transition: color 0.3s;
         }
 
-        .youtube a i {
-            font-size: 45px;
-            padding-top: 15px;
-            margin: 10px;
-            color: red;
+        .social a:hover {
+            color: gold;
         }
 
-        .facebook a i {
-            font-size: 45px;
-            padding-top: 15px;
-            margin: 10px;
-            color: rgb(0, 15, 224);
+        .right input, 
+        .right textarea, 
+        .right button {
+            width: 100%;
+            max-width: 450px;
+            margin: 10px auto;
+            padding: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.8);
+            border-radius: 5px;
+            font-size: 1rem;
         }
 
-        .right {
-            border: 2px solid rgb(255, 255, 255);
-            width: 40vw;
-            height: 80vh;
-        }
-
-        .right input {
-            width: 500px;
-            height: 40px;
-            margin: 10px;
-            border-radius: 10px;
+        .right input:focus,
+        .right textarea:focus {
+            outline: none;
+            border-color: gold;
+            color: navy;
         }
 
         .right textarea {
-            width: 500px;
-            height: 250px;
-            margin: 10px;
+            resize: none; /* Disable resizing */
         }
 
         .right button {
-            width: 120px;
-            height: 50px;
-            border-radius: 10px;
-            margin: 10px;
+            background-color: gold;
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .right button:hover {
+            background-color: white;
+            color: black;
+        }
+
+        @media (max-width: 768px) {
+            .left, .right {
+                max-width: 100%;
+                margin: 10px 0;
+            }
+
+            .left h2, 
+            .social a {
+                text-align: center;
+            }
         }
     </style>
 </head>
 
 <body>
     <div class="container">
+        <!-- Left Section -->
         <div class="left">
-            <div class="address"><i class="fa-solid fa-location-dot"></i>
-                <p>Syllani headquarter,Hyderabad.</p>
+            <div class="address">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Syllani Headquarters, Hyderabad</p>
             </div>
-            <div class="mobile"><i class="fa-sharp fa-solid fa-mobile"></i>
+            <div class="mobile">
+                <i class="fa-sharp fa-solid fa-mobile"></i>
                 <p>0334-8108095</p>
             </div>
-            <div class="whatsapp"><i class="fa-brands fa-whatsapp"></i>
+            <div class="whatsapp">
+                <i class="fa-brands fa-whatsapp"></i>
                 <p>0346-3825908</p>
             </div>
-            <div class="email"><i class="fa-sharp fa-regular fa-envelope"></i>
+            <div class="email">
+                <i class="fa-regular fa-envelope"></i>
                 <p>musharrafzafar@gmail.com</p>
             </div>
-            <h2>Click For Social</h2>
+            <h2>Connect on Social Media</h2>
             <div class="social">
-                <div class="linkedin"><a href="https://www.linkedin.com/feed/" target="_blank"><i
-                            class="fa-brands fa-linkedin"></i></a></div>
-                <div class="youtube"><a href="https://www.youtube.com/channel/UCcZZTluW9yNOdlUsyY1PLAQ"
-                        target="_blank"><i class="fa-brands fa-youtube"></i></a></div>
-                        <div class="facebook"><a href="https://www.facebook.com/Musharraf.siuddiqui" target="_blank"><i class="fa-brands fa-facebook"></i></a></div>
+                <a href="https://www.linkedin.com/feed/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.youtube.com/channel/UCcZZTluW9yNOdlUsyY1PLAQ" target="_blank"><i
+                        class="fa-brands fa-youtube"></i></a>
+                <a href="https://www.facebook.com/Musharraf.siuddiqui" target="_blank"><i
+                        class="fa-brands fa-facebook"></i></a>
             </div>
         </div>
+
+        <!-- Right Section -->
         <div class="right">
-            <input type="" placeholder="Enter Your Name"> <br>
-            <input type="email" placeholder="Wite your E-Mail"> <br>
-            <textarea name="textarea" id="textarea" placeholder="write /your Message"></textarea> <br>
+            <input type="text" placeholder="Enter Your Name">
+            <input type="email" placeholder="Enter Your Email">
+            <textarea placeholder="Write Your Message"></textarea>
             <button>Send Message</button>
         </div>
     </div>
